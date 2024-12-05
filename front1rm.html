@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo de 1RM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cálculo de 1RM</h1>
+    <form id="rm-form">
+      <div class="input-group">
+        <label for="carga">Carga (kg):</label>
+        <input type="number" id="carga" step="any" placeholder="Digite a carga" required>
+      </div>
+      <div class="input-group">
+        <label for="rpe">RPE:</label>
+        <input type="number" id="rpe" step="any" placeholder="Digite o RPE" required>
+      </div>
+      <div class="input-group">
+        <label for="reps">Repetições:</label>
+        <input type="number" id="reps" placeholder="Digite as repetições" required>
+      </div>
+      <button type="submit">Calcular</button>
+      <div class="resultado">
+        <h3>Sua 1 Rep Max:</h3>
+        <p id="onerepmax">--</p>
+      </div>
+    </form>
+  </div>
+
+  <script src="calculo1rm.js"></script>
+</body>
+</html>
