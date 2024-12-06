@@ -3,28 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cálculo de 1RM</title>
+  <title>One Rep Max Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Cálculo de 1RM</h1>
+    <h1>One Rep Max Calculator</h1>
     <form id="rm-form">
       <div class="input-group">
-        <label for="carga">Carga (kg):</label>
-        <input type="number" id="carga" step="any" placeholder="Digite a carga" required>
+        <label for="carga">Weight (kg):</label>
+        <input type="number" id="carga" step="any" placeholder="Type your weight" required>
       </div>
       <div class="input-group">
         <label for="rpe">RPE:</label>
-        <input type="number" id="rpe" step="any" placeholder="Digite o RPE" required>
+        <select id="rpe" required>
+          <option value="" disabled selected>Select RPE</option>
+          <option value="4">4</option>
+          <option value="4.5">4.5</option>
+          <option value="5">5</option>
+          <option value="5.5">5.5</option>
+          <option value="6">6</option>
+          <option value="6.5">6.5</option>
+          <option value="7">7</option>
+          <option value="7.5">7.5</option>
+          <option value="8">8</option>
+          <option value="8.5">8.5</option>
+          <option value="9">9</option>
+          <option value="9.5">9.5</option>
+          <option value="10">10</option>
+        </select>
       </div>
       <div class="input-group">
-        <label for="reps">Repetições:</label>
-        <input type="number" id="reps" placeholder="Digite as repetições" required>
+        <label for="reps">Reps:</label>
+        <input type="number" id="reps" placeholder="Type your reps" required>
       </div>
-      <button type="submit">Calcular</button>
+      <button type="submit">Calculate</button>
       <div class="resultado">
-        <h3>Sua 1 Rep Max:</h3>
+        <h3>Your estimated one rep max:</h3>
         <p id="onerepmax">--</p>
       </div>
     </form>

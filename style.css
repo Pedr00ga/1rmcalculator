@@ -52,6 +52,28 @@ input[type="number"] {
   background-color: #222; /* Fundo cinza escuro */
   color: #fff;
   box-sizing: border-box;
+  -moz-appearance: textfield; /* Remove as setas no Firefox */
+  -webkit-appearance: none; /* Remove as setas no Chrome, Safari e Edge */
+  appearance: none; /* Propriedade padrão */
+}
+
+/* Estilo para o select (dropdown) */
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ff0000; /* Borda vermelha */
+  border-radius: 5px;
+  background-color: #222; /* Fundo cinza escuro */
+  color: #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* Estilo para hover e foco */
+select:hover, select:focus {
+  border-color: #cc0000; /* Vermelho escuro no hover */
+  outline: none;
 }
 
 /* Botão */
